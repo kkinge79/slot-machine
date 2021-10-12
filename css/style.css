@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+}
+
 #displayResults {
 display: flex;
 margin: auto;
+margin-top: 20px;
 border: 1px solid black;
 width: 450px;
 height:90px;
@@ -8,7 +13,7 @@ height:90px;
 
 #slotsMachine {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #000000;
   height: 300px;
   width: 500px;
   margin: auto;
@@ -44,8 +49,7 @@ justify-content: center;
 margin-top: 50px;
 }
 
-#totalPoints {
-  display: flex;
+#wallet {
   justify-content: center;
   margin: auto;
   margin-top: 40px;
