@@ -1,0 +1,55 @@
+#displayResults {
+display: flex;
+margin: auto;
+border: 1px solid black;
+width: 450px;
+height:90px;
+}
+
+#slotsMachine {
+  display: flex;
+  border: 1px solid black;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#slotOne {
+  width: 90px;
+  height: 150px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#slotTwo {
+  width: 90px;
+  height: 150px;
+  border: 1px solid black;
+  margin: auto;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#slotThree {
+  width: 90px;
+  height: 150px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#playButton {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+#totalPoints {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+}
