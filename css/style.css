@@ -16,6 +16,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
 }
 
 
@@ -28,6 +29,10 @@ margin: auto;
 margin-top: 20px;
 width: 450px;
 height:90px;
+}
+
+.animate__animated {
+  animation-duration: 2.5s;
 }
 
 /* the actual slot machine  */
