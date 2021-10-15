@@ -15,7 +15,6 @@
 
 const displayResults = document.querySelector("#displayResults")
 // const slotsMachine = document.querySelector('#slotsMachine')
-// const playButton = document.querySelector('#playButton')
 // const wallet = document.querySelector('#wallet')
 // const slotNum = document.querySelector('.slot-number')
 
@@ -28,41 +27,39 @@ const displayResults = document.querySelector("#displayResults")
 // /*-------------------------------- Functions --------------------------------*/
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * 2) + 1;
+  return Math.floor(Math.random() * 4) + 1;
 }
 
-function getElement(id) {
-  return document.getElementById(id);
-}
+
+
 
 function spin() {
   const slotOne = document.querySelector('#slotOne')
   const slotTwo = document.querySelector('#slotTwo')
   const slotThree = document.querySelector('#slotThree')
 
-
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const num3 = getRandomNumber();
 
-  slotOne.innerHTML = `${num1}`;
-  slotTwo.innerHTML =  `${num2}`;
-  slotThree.innerHTML =  `${num3}`;
+slotOne.innerHTML = `${num1}`;
+slotTwo.innerHTML =  `${num2}`;
+slotThree.innerHTML =  `${num3}`;
 
-  if (num1 === num2 && num1 === num3) {
-    showMessage();
-  } else {
-    hideMessage();
-  }
+if (num1 === num2 && num1 === num3) {
+  showMessage();
+} else {
+  hideMessage();
+}
 
 }
 
 function showMessage() {
-  const msg = document.getElementById("displayResults");
-  msg.style.display = "block";
+  const winnerMsg = document.getElementById("displayResults");
+  winnerMsg.style.display = "block";
 }
 
 function hideMessage() {
-  const msg = document.getElementById("displayResults");
-  msg.style.display = "none";
+  const winnerMsg = document.getElementById("displayResults");
+  winnerMsg.style.display = "none";
 }
