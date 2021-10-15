@@ -26,13 +26,17 @@ text-align: center;
 font-size: 10rem;
 display: flex;
 margin: auto;
-margin-top: 20px;
 width: 450px;
 height:90px;
 }
 
 .animate__animated {
   animation-duration: 2s;
+}
+
+#winner {
+  min-height: 90px;
+  margin-top: 20px;
 }
 
 /* the actual slot machine  */
@@ -45,6 +49,17 @@ height:90px;
   margin-top: 50px;
 }
 
+/*  */
+
+img {
+  width: 88px;
+  height: 90px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 
 /* each individual slot, where the icons show */
 #slotOne {
