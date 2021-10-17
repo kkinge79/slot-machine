@@ -10,13 +10,15 @@ const slotsReel = 5;
 // /*-------------------------------- Variables --------------------------------*/
 
 
-const arrayOfChoices = [cherry, diamond, bell, seven, clover]
+const arrayOfChoices = [cherry, bell, clover, diamond, seven]
+let credits = 10;
 
 // /*------------------------ Cached Element References ------------------------*/
 
-const displayResults = document.querySelector("#displayResults")
+const displayResults = document.querySelector("#displayResults");
 const titleEl = document.querySelector('#title');
-const slotsMachine= document.querySelector('#slotsMachine')
+const slotsMachine = document.querySelector('#slotsMachine');
+const spinButton = document.querySelector('#spinButton')
 
 // /*----------------------------- Event Listeners -----------------------------*/
 
@@ -26,8 +28,9 @@ const slotsMachine= document.querySelector('#slotsMachine')
 //generates a random number between 1-4
 //adds plus 1 to all numbers so instead of 0-3. it chooses 1-4
 function getRandomNumber() {
-  return Math.floor(Math.random() * 5);
+  return Math.floor(Math.random() * slotsReel);
 }
+
 
 
 // when spin button pushed executes the code
@@ -48,6 +51,7 @@ function spin() {
 //determine if there is a winner, if yes show the WINNER message, if not, hide message
 if (num1 === num2 && num1 === num3) {
   showMessage();
+  
 } else {
   hideMessage();
   }
@@ -75,3 +79,6 @@ const speak = (msg) => {
   const sp = new SpeechSynthesisUtterance(msg);
   speechSynthesis.speak(sp);
 }
+
+
+

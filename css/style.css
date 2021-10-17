@@ -117,15 +117,24 @@ img {
 }
 
 /* displays the users balance  */
-#wallet {
+#output {
   justify-content: center;
   margin: auto;
   margin-top: 40px;
-  border: 1px solid black;
+  border: 3px solid black;
   width: 200px;
   height: 40px;
+  background-color: white;
 }
-
+#credOutput {
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  border: 3px solid black;
+  width: 200px;
+  height: 40px;
+  background-color: white;
+}
 /* BUTTON CODE */
 
 #spinButton {
@@ -191,3 +200,9 @@ img {
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
 }
+
+
+
+
+
+
