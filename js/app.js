@@ -6,6 +6,7 @@ const seven = '../images/seven.png';
 const clover = '../images/clover.png'
 
 const audio = new Audio('../audio/butn.mp3')
+const winner = new Audio('../audio/winner.wav')
 
 // /*-------------------------------- Variables --------------------------------*/
 
@@ -63,11 +64,13 @@ function showMessage() {
   const winnerMsg = document.getElementById("displayResults");
   winnerMsg.style.display = "block";
   winnerMsg.classList.add('animate__flash')
+  setTimeout(function(){
+    winner.play();
+  },0);
   //if win, voice command will activate 
-  if(showMessage) {
-    speak("winner winner chicken dinner")
+  // if(showMessage) {
+  //   speak("winner winner chicken dinner")
   }
-}
 
 //function to hide message if there is no winner
 function hideMessage() {
@@ -77,8 +80,8 @@ function hideMessage() {
 
 
 //will speak when there is a winner
-const speak = (msg) => {
-  const sp = new SpeechSynthesisUtterance(msg);
-  speechSynthesis.speak(sp);
-}
+// const speak = (msg) => {
+//   const sp = new SpeechSynthesisUtterance(msg);
+//   speechSynthesis.speak(sp);
+// }
 
