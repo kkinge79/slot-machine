@@ -30,10 +30,18 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 
 // /*-------------------------------- Functions --------------------------------*/
 
-
 //generates a random number between 1-5
 function getRandomNumber() {
-  return Math.floor(Math.random() * 5);
+  let sum = 0
+  let num
+  const weightedRand = {
+    0:0.3, 1:0.3, 2:0.25, 3:0.1, 4:0.05
+  }
+  for (num in weightedRand) {
+    sum += weightedRand[num]
+    if(Math.random() <= sum) return num;
+  }
+  return num
 }
 
 
@@ -47,6 +55,7 @@ function spin() {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const num3 = getRandomNumber();
+
   // assaigning each slot with a randomly generated number
   // used local img file and called those images into the consts, allowing me to change the numbers to pics instead
   slotOne.innerHTML = `<img class="imgOne" src="${arrayOfChoices[num1]}">`;
