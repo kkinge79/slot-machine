@@ -12,6 +12,7 @@ html {
   font-size: 62.5%
 }
 
+/* body initial setup */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -30,16 +31,15 @@ margin: auto;
 width: 450px;
 height:90px;
 }
-
 .animate__animated {
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
-
 #winner {
   min-height: 90px;
   margin-top: 20px;
   font-family: 'Oswald', sans-serif;
 }
+
 
 /* the actual slot machine  */
 #slotsMachine {
@@ -54,6 +54,8 @@ height:90px;
   filter: drop-shadow(30px 20px 4px #5b9791);
 }
 
+
+/* inner shell of slot machine for decor */
 #slotsDecor {
   display: flex;
   border: 4px solid black;
@@ -65,8 +67,8 @@ height:90px;
   border-radius: 5%;
 }
 
-/* images linked to the random numbers */
 
+/* images linked to the random numbers */
 img {
   width: 70px;
   height: 80px;
@@ -91,7 +93,6 @@ img {
   background-color: white;
   border-radius: 7%;
 }
-
 #slotTwo {
   margin: auto;
   margin-left: -30px;
@@ -104,7 +105,6 @@ img {
   background-color: white;
   border-radius: 7%;
 }
-
 #slotThree {
   margin: auto;
   font-size: 100px;
@@ -116,27 +116,25 @@ img {
   border-radius: 7%;
 }
 
-/* displays the users balance  */
-#output {
-  justify-content: center;
-  margin: auto;
-  margin-top: 40px;
-  border: 3px solid black;
-  width: 200px;
-  height: 40px;
-  background-color: white;
-}
+
+/* displays users credits */
 #credOutput {
   justify-content: center;
   margin: auto;
   margin-top: 40px;
+  
   border: 3px solid black;
-  width: 200px;
+  width: 150px;
   height: 40px;
   background-color: white;
+  font-size: 30px;
 }
-/* BUTTON CODE */
+#credOutput > span {
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+}
 
+/* BUTTON CODE */
 #spinButton {
   display: flex;
   justify-content: center;
@@ -200,9 +198,3 @@ img {
     -o-transform: translate(0, 4px);
     transform: translate(0, 4px);
 }
-
-
-
-
-
-
