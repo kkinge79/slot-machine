@@ -18,12 +18,19 @@ const displayResults = document.querySelector("#displayResults");
 const titleEl = document.querySelector('#title');
 const slotsMachine = document.querySelector('#slotsMachine');
 const spinButton = document.querySelector('#spinButton')
+const slotOne = document.querySelector('#slotOne')
+const slotTwo = document.querySelector('#slotTwo')
+const slotThree = document.querySelector('#slotThree')
 
+const body = document.querySelector("body")
+const lightDarkBtn = document.querySelector("#light-dark-button")
 // /*----------------------------- Event Listeners -----------------------------*/
 
-
+lightDarkBtn.addEventListener("click", toggleLightDark)
 
 // /*-------------------------------- Functions --------------------------------*/
+
+
 //generates a random number between 1-5
 function getRandomNumber() {
   return Math.floor(Math.random() * 5);
@@ -40,7 +47,7 @@ function spin() {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const num3 = getRandomNumber();
-  // assaigning each slow with a randomly generated number
+  // assaigning each slot with a randomly generated number
   // used local img file and called those images into the consts, allowing me to change the numbers to pics instead
   slotOne.innerHTML = `<img class="imgOne" src="${arrayOfChoices[num1]}">`;
   slotTwo.innerHTML =  `<img class="imgTwo" src="${arrayOfChoices[num2]}">`;
@@ -48,7 +55,6 @@ function spin() {
 //determine if there is a winner, if yes show the WINNER message, if not, hide message
   if (num1 === num2 && num1 === num3) {
     showMessage();
-  
   } else {
     hideMessage();
   }
@@ -85,3 +91,17 @@ function hideMessage() {
 //   speechSynthesis.speak(sp);
 // }
 
+
+// light and dark mode
+function toggleLightDark() {
+  body.className = body.className === "dark" ? "" : "dark"
+}
+function checkDarkPref() {
+  if (
+    window.matchMedia("(prefers-color-scheme:dark)").matches &&
+    body.className !== "dark"
+  ) {
+    toggleLightDark()
+  }
+}
+checkDarkPref()

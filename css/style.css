@@ -14,12 +14,16 @@ html {
 
 /* body initial setup */
 body {
+
+
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   min-height: 100vh;
   background-color: #83C5BE;
 }
+
+
 
 
 /* displays WINNER if there is a winning combination */
@@ -92,6 +96,7 @@ img {
   border: 3px solid black;
   background-color: white;
   border-radius: 7%;
+
 }
 #slotTwo {
   margin: auto;

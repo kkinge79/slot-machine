@@ -13,35 +13,39 @@
     <link rel="preconnect" href="https://fonts. googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <script src="/js/app.js"></script>
+    <script defer src="/js/app.js"></script>
     <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
+
+    <button id="light-dark-button" class="btn"></button>
+
     <div id='winner'>
       <div id="displayResults" style="display:none" class="animate__animated animate__flash">WINNER!</div>
     </div>  
-
+    
     
     <div id="slotsMachine">
       <div id="slotsDecor">
         <div id="slotOne" class="slot-number"></div>
-
+        
         <div id="slotTwo" class="slot-number"></div>
-
+        
         <div id="slotThree" class="slot-number"></div>
       </div>
     </div>
-
+    
     <div id="spinButton">
       <a href="#"  class="button" type="button" onclick="spin()">
         <span>SPIN!</span>
       </a>
     </div>
-
-    <div id="credOutput"><span>CREDITS:</span> 10</div>
-
- 
+    
+    <div>
+      <div id="credOutput"><span>CREDITS:</span> 10</div>
+    </div>
+    
 
   </body> 
 
