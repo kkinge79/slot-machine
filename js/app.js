@@ -87,11 +87,11 @@ function spin() {
   } else if(slotOne === 1 && slotTwo === 1 && slotThree=== 1) {
     credits = credits + 20;
   } else if (slotOne === 2 && slotTwo === 2 && slotThree=== 2) {
-    credits = credits + 40;
+    credits = credits + 50;
   } else if (slotOne === 3 && slotTwo === 3 && slotThree=== 3) {
     credits = credits + 100;
   } else if (slotOne === 4 && slotTwo === 4 && slotThree=== 4) {
-    credits = credits + 400;
+    credits = credits + 500;
   } else {
     credits = credits - 10;
   }
