@@ -4,7 +4,7 @@ chill-slots
 - a simple minimalist slot machine or fun! Has preset credits and depending on the combonation you get, it increases your credits! 
 
 
-https://chill-slots.netlify.app/
+https://minimalist-slots.netlify.app/
   -hit spin!, every time you get three in a row get more credits! if you hit 0 credits then you lose! good luck
   - cherry: 20
 - bell: 20

@@ -87,13 +87,13 @@ console.log(num2 === "0")
 console.log(num3 === "0")
 
   if(num1 === '0' && num2 === '0' && num3 === '0') {
-    credits = credits + 40;
+    credits = credits + 30;
   } else if(num1 === '1' && num2 === '1' && num3 === '1') {
     credits = credits + 40;
   } else if (num1 === '2' && num2 === '2' && num3 === '2') {
-    credits = credits + 80;
+    credits = credits + 100;
   } else if (num1 === '3' && num2 === '3' && num3 === '3') {
-    credits = credits + 120;
+    credits = credits + 200;
   } else if (num1 === '4' && num2 === '4' && num3 === '4') {
     credits = credits + 500;} 
   else {
