@@ -21,7 +21,8 @@ const spinButton = document.querySelector('#spinButton')
 const slotOne = document.querySelector('#slotOne')
 const slotTwo = document.querySelector('#slotTwo')
 const slotThree = document.querySelector('#slotThree')
-
+const credOutput = document.querySelector('#credOutput')
+const btn = document.querySelector('light-dark-button')
 const body = document.querySelector("body")
 const lightDarkBtn = document.querySelector("#light-dark-button")
 // /*----------------------------- Event Listeners -----------------------------*/
@@ -30,7 +31,9 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 
 // /*-------------------------------- Functions --------------------------------*/
 
-//generates a random number between 1-5
+//function called getRandomNumber, that has a weighted probability per number
+//for in loop so iterates through every variable in the object
+//have the sum equal to the number in weightedRand object 
 function getRandomNumber() {
   let sum = 0
   let num
@@ -99,6 +102,13 @@ function hideMessage() {
 //   const sp = new SpeechSynthesisUtterance(msg);
 //   speechSynthesis.speak(sp);
 // }
+
+
+//credits function
+document.querySelector('#credOutput').innerHTML = 50
+function credits(){
+
+}
 
 
 // light and dark mode
