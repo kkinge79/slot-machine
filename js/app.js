@@ -50,6 +50,7 @@ function getRandomNumber() {
 
 // when spin button pushed executes the code
 function spin() {
+
   //calling the ids from html
   const slotOne = document.querySelector('#slotOne')
   const slotTwo = document.querySelector('#slotTwo')
@@ -74,6 +75,32 @@ function spin() {
   setTimeout(function(){
     audio.play();
   },0);
+
+
+
+  //credits
+  let credits = 100
+  document.querySelector('#credOutput').innerHTML = credits
+
+  if(slotOne === 0 && slotTwo === 0 && slotThree === 0) {
+    credits = credits + 20;
+  } else if(slotOne === 1 && slotTwo === 1 && slotThree=== 1) {
+    credits = credits + 20;
+  } else if (slotOne === 2 && slotTwo === 2 && slotThree=== 2) {
+    credits = credits + 40;
+  } else if (slotOne === 3 && slotTwo === 3 && slotThree=== 3) {
+    credits = credits + 100;
+  } else if (slotOne === 4 && slotTwo === 4 && slotThree=== 4) {
+    credits = credits + 400;
+  } else {
+    credits = credits - 10;
+  }
+  function zeroCredits() {
+    if(credits === 0) {
+      document.querySelector('#credOutput').innerHTML = 0
+    }
+  }
+  zeroCredits()
 }
 
 
@@ -103,12 +130,6 @@ function hideMessage() {
 //   speechSynthesis.speak(sp);
 // }
 
-
-//credits function
-document.querySelector('#credOutput').innerHTML = 50
-function credits(){
-
-}
 
 
 // light and dark mode

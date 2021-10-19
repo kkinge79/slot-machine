@@ -255,10 +255,12 @@ p {
 #light-dark-button {
   background-color: var(--light-dark-btn-bg);
   background-image: var(--light-dark-btn-bg);
+  border-radius: 15%;
 }
 
 #light-dark-button::after {
   border: none;
   color: var(--inverted-btn-text-color);
   content: var(--light-dark-btn-content);
+border-radius: 15%;
 }
