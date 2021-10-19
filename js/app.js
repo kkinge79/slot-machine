@@ -11,6 +11,7 @@ const winner = new Audio('../audio/winner.wav')
 // /*-------------------------------- Variables --------------------------------*/
 
 const arrayOfChoices = [cherry,bell,clover,diamond,seven]
+let credits = 1000
 
 // /*------------------------ Cached Element References ------------------------*/
 
@@ -30,6 +31,9 @@ const lightDarkBtn = document.querySelector("#light-dark-button")
 lightDarkBtn.addEventListener("click", toggleLightDark)
 
 // /*-------------------------------- Functions --------------------------------*/
+//credits displayed at the beginning of sch
+
+
 
 //function called getRandomNumber, that has a weighted probability per number
 //for in loop so iterates through every variable in the object
@@ -75,29 +79,32 @@ function spin() {
   setTimeout(function(){
     audio.play();
   },0);
+    //credits
+//console.log(num1)
+//console.log(1)
+console.log(num1 === "0")
+console.log(num2 === "0")
+console.log(num3 === "0")
 
-
-
-  //credits
-  let credits = 100
-  document.querySelector('#credOutput').innerHTML = credits
-
-  if(slotOne === 0 && slotTwo === 0 && slotThree === 0) {
-    credits = credits + 20;
-  } else if(slotOne === 1 && slotTwo === 1 && slotThree=== 1) {
-    credits = credits + 20;
-  } else if (slotOne === 2 && slotTwo === 2 && slotThree=== 2) {
-    credits = credits + 50;
-  } else if (slotOne === 3 && slotTwo === 3 && slotThree=== 3) {
-    credits = credits + 100;
-  } else if (slotOne === 4 && slotTwo === 4 && slotThree=== 4) {
-    credits = credits + 500;
-  } else {
+  if(num1 === '0' && num2 === '0' && num3 === '0') {
+    credits = credits + 40;
+  } else if(num1 === '1' && num2 === '1' && num3 === '1') {
+    credits = credits + 40;
+  } else if (num1 === '2' && num2 === '2' && num3 === '2') {
+    credits = credits + 80;
+  } else if (num1 === '3' && num2 === '3' && num3 === '3') {
+    credits = credits + 120;
+  } else if (num1 === '4' && num2 === '4' && num3 === '4') {
+    credits = credits + 500;} 
+  else {
     credits = credits - 10;
   }
+
+  credOutput.innerHTML = credits;
+
   function zeroCredits() {
     if(credits === 0) {
-      document.querySelector('#credOutput').innerHTML = 0
+      document.querySelector('#credOutput').innerHTML = "0"
     }
   }
   zeroCredits()
