@@ -11,7 +11,7 @@ const winner = new Audio('../audio/winner.wav')
 // /*-------------------------------- Variables --------------------------------*/
 
 const arrayOfChoices = [cherry,bell,clover,diamond,seven]
-let credits = 10
+let credits = 5000
 
 // /*------------------------ Cached Element References ------------------------*/
 
@@ -52,7 +52,6 @@ function getRandomNumber() {
   return num
 }
 
-
 // when spin button pushed executes the code
 function spin() {
 
@@ -83,6 +82,9 @@ function spin() {
 
     //credits
     //ties into the array of choices, and will add credits depending on the combination you get
+    //if else statement so user cant play with negative credits
+    //will keep allowing the user to hit play but wont add/subtract credits
+    if (credits > 0) {
   if(num1 === '0' && num2 === '0' && num3 === '0') {
     credits = credits + 50;
   } else if(num1 === '1' && num2 === '1' && num3 === '1') {
@@ -98,14 +100,8 @@ function spin() {
   }
 //to call more than once
   credOutput.innerHTML = credits;
-//what happens when you run out of credits
-  function zeroCredits() {
-    if(credits < 0) {
-      alert("You dont have any more credits!")
-      spinButton.disabled = true;
-    }  
-  }
-  zeroCredits()
+} else { alert("You have no more credits!")}
+
 }
 
 
