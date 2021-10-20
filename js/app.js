@@ -102,7 +102,6 @@ function spin() {
 //to call more than once
   credOutput.innerHTML = credits;
 } else { alert("You have no more credits!")}
-
 }
 
   //trigger if you want voice chat when you win
