@@ -10,15 +10,15 @@ https://minimalist-slots.netlify.app/
 
 ## how to play and point system
 -hit spin!, every time you get three in a row get more credits! if you hit 0 credits then you lose! good luck
-  - cherry: 20
-  - bell: 20
-  - clover: 50
-  - diamond: 100
+  - cherry: 50
+  - bell: 50
+  - clover: 100
+  - diamond: 250
   - seven: 500
-  - -10 per spin
+  - costs 10 per spin
 
 ## built with
-javascript, HTML5, CSS,google fonts ,and external buttons
+javascript, HTML5, CSS,google fonts ,and external buttons, replay button, allow user to add more credits, multiply bets for more credits
 
 ## wire-frame and screenshots
 wireframe: 
