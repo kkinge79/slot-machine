@@ -11,7 +11,7 @@ const winner = new Audio('../audio/winner.wav')
 // /*-------------------------------- Variables --------------------------------*/
 
 const arrayOfChoices = [cherry,bell,clover,diamond,seven]
-let credits = 5000
+let credits = 10
 
 // /*------------------------ Cached Element References ------------------------*/
 
@@ -103,7 +103,7 @@ function spin() {
     if(credits < 0) {
       alert("You dont have any more credits!")
       spinButton.disabled = true;
-    }
+    }  
   }
   zeroCredits()
 }

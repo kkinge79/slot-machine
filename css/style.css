@@ -250,12 +250,3 @@ p {
   content: var(--light-dark-btn-content);
 border-radius: 15%;
 }
-
-@media only screen and (max-width: 414px) {
-  #mobileFormat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-}
