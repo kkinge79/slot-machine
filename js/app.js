@@ -1,17 +1,17 @@
 // /*-------------------------------- Constants --------------------------------*/
+
 const cherry = '../images/cherry.png';
 const diamond = '../images/diamond.png';
 const bell = '../images/bell.png';
 const seven = '../images/seven.png';
 const clover = '../images/clover.png'
-
 const audio = new Audio('../audio/butn.mp3')
 const winner = new Audio('../audio/winner.wav')
 
 // /*-------------------------------- Variables --------------------------------*/
 
 const arrayOfChoices = [cherry,bell,clover,diamond,seven]
-let credits = 1000
+let credits = 5000
 
 // /*------------------------ Cached Element References ------------------------*/
 
@@ -26,6 +26,7 @@ const credOutput = document.querySelector('#credOutput')
 const btn = document.querySelector('light-dark-button')
 const body = document.querySelector("body")
 const lightDarkBtn = document.querySelector("#light-dark-button")
+
 // /*----------------------------- Event Listeners -----------------------------*/
 
 lightDarkBtn.addEventListener("click", toggleLightDark)
@@ -79,32 +80,29 @@ function spin() {
   setTimeout(function(){
     audio.play();
   },0);
-    //credits
-//console.log(num1)
-//console.log(1)
-console.log(num1 === "0")
-console.log(num2 === "0")
-console.log(num3 === "0")
 
+    //credits
+    //ties into the array of choices, and will add credits depending on the combination you get
   if(num1 === '0' && num2 === '0' && num3 === '0') {
-    credits = credits + 30;
+    credits = credits + 50;
   } else if(num1 === '1' && num2 === '1' && num3 === '1') {
-    credits = credits + 40;
+    credits = credits + 50;
   } else if (num1 === '2' && num2 === '2' && num3 === '2') {
     credits = credits + 100;
   } else if (num1 === '3' && num2 === '3' && num3 === '3') {
-    credits = credits + 200;
+    credits = credits + 250;
   } else if (num1 === '4' && num2 === '4' && num3 === '4') {
     credits = credits + 500;} 
   else {
     credits = credits - 10;
   }
-
+//to call more than once
   credOutput.innerHTML = credits;
-
+//what happens when you run out of credits
   function zeroCredits() {
-    if(credits === 0) {
-      document.querySelector('#credOutput').innerHTML = "0"
+    if(credits < 0) {
+      alert("You dont have any more credits!")
+      spinButton.disabled = true;
     }
   }
   zeroCredits()
@@ -119,10 +117,11 @@ function showMessage() {
   setTimeout(function(){
     winner.play();
   },0);
+  //trigger if you want voice chat when you win
   //if win, voice command will activate 
   // if(showMessage) {
   //   speak("winner winner chicken dinner")
-  }
+}
 
 //function to hide message if there is no winner
 function hideMessage() {
@@ -130,7 +129,7 @@ function hideMessage() {
   winnerMsg.style.display = "none";
 }
 
-
+//toggle if you want voice chat when you win
 //will speak when there is a winner
 // const speak = (msg) => {
 //   const sp = new SpeechSynthesisUtterance(msg);
@@ -146,9 +145,9 @@ function toggleLightDark() {
 function checkDarkPref() {
   if (
     window.matchMedia("(prefers-color-scheme:dark)").matches &&
-    body.className !== "dark"
-  ) {
+    body.className !== "dark") 
+    {
     toggleLightDark()
-  }
+    }
 }
 checkDarkPref()
