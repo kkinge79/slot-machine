@@ -43,7 +43,7 @@ function getRandomNumber() {
   let sum = 0
   let num
   const weightedRand = {
-    0:0.3, 1:0.3, 2:0.25, 3:0.1, 4:0.05
+    0:0.3, 1:0.3, 2:0.2, 3:0.15, 4:0.05
   }
   for (num in weightedRand) {
     sum += weightedRand[num]
@@ -94,8 +94,9 @@ function spin() {
   } else if (num1 === '3' && num2 === '3' && num3 === '3') {
     credits = credits + 250;
   } else if (num1 === '4' && num2 === '4' && num3 === '4') {
-    credits = credits + 500;} 
-  else {
+    credits = credits + 1000;
+    jackpot()
+  } else {
     credits = credits - 10;
   }
 //to call more than once
@@ -104,7 +105,13 @@ function spin() {
 
 }
 
-
+  //trigger if you want voice chat when you win
+  //if win, voice command will activate 
+function jackpot() {
+  if(jackpot) {
+    speak("BIG WINNER! YOU HIT THE JACKPOT")
+  }
+}
 //function to show message when there is a winner
 function showMessage() {
   const winnerMsg = document.getElementById("displayResults");
@@ -113,10 +120,6 @@ function showMessage() {
   setTimeout(function(){
     winner.play();
   },0);
-  //trigger if you want voice chat when you win
-  //if win, voice command will activate 
-  // if(showMessage) {
-  //   speak("winner winner chicken dinner")
 }
 
 //function to hide message if there is no winner
@@ -127,10 +130,10 @@ function hideMessage() {
 
 //toggle if you want voice chat when you win
 //will speak when there is a winner
-// const speak = (msg) => {
-//   const sp = new SpeechSynthesisUtterance(msg);
-//   speechSynthesis.speak(sp);
-// }
+const speak = (msg) => {
+  const sp = new SpeechSynthesisUtterance(msg);
+  speechSynthesis.speak(sp);
+}
 
 
 
