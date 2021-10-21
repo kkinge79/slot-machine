@@ -21,8 +21,8 @@ https://minimalist-slots.netlify.app/
 -Hit spin!, every time you get three matching icons in a row itll add to your credits! if you hit 0 credits then you lose!
   
   - 3 cherries: 50
-  - 3 bells: 75
-  - 3 clovers: 150
+  - 3 bells: 50
+  - 3 clovers: 125
   - 3 diamons: 500
   - 3 sevens: 5000 (jackpot!)
   - Costs 10 per spin
@@ -48,7 +48,7 @@ Winner!-https://imgur.com/a/SkdXS73
 
 
 ## Next steps 
-Mobile format, spin animation, more winning combinations, diffrent slot themes
+Mobile format, spin animation, more winning combinations, different slot themes, bonus game
 
 
 
