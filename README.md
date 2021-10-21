@@ -30,15 +30,14 @@ https://minimalist-slots.netlify.app/
 ---------------------------------
 
 ## built with
-javascript, HTML5, CSS
+javascript, HTML5, CSS, Animate.css
 
 ---------------------------------
 
 ## wire-frame and screenshots
 wireframe: 
 <img src="https://imgur.com/a/YE5etYC"/>
-
----------------------------------
+other wireframe that i want t o work on in future: <img src="https://imgur.com/a/aIsWQwT"/>
 
 screen shots:  
 basic html/css- <img src="https://imgur.com/a/u0wcn2Z"/>
@@ -73,3 +72,4 @@ cherry/diamond/clover icon attribute "Freepik" from flaticon
 bell icon attribute "CreativeCons" from flaticon
 button provided by cssDeck.com
 button & winner sound provided by https://www.fesliyanstudios.com
+favicon -Erin glass/ digitialocean.com
