@@ -44,6 +44,7 @@ function getRandomNumber() {
   let num
   const weightedRand = {
     0:0.3, 1:0.3, 2:0.2, 3:0.15, 4:0.05
+    //cherry, bell, clover, diamond , seven
   }
   for (num in weightedRand) {
     sum += weightedRand[num]
@@ -108,7 +109,7 @@ function spin() {
   //if win, voice command will activate 
 function jackpot() {
   if(jackpot) {
-    speak("BIG WINNER! YOU HIT THE JACKPOT")
+    speak("WINNER WINNER CHICKEN DINNER")
   }
 }
 //function to show message when there is a winner
@@ -127,7 +128,7 @@ function hideMessage() {
   winnerMsg.style.display = "none";
 }
 
-//toggle if you want voice chat when you win
+
 //will speak when there is a winner
 const speak = (msg) => {
   const sp = new SpeechSynthesisUtterance(msg);

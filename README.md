@@ -14,11 +14,11 @@ https://minimalist-slots.netlify.app/
   - bell: 50
   - clover: 100
   - diamond: 250
-  - seven: 500
+  - seven: 1000
   - costs 10 per spin
 
 ## built with
-javascript, HTML5, CSS,google fonts ,and external buttons, replay button, allow user to add more credits, multiply bets for more credits
+javascript, HTML5, CSS,google fonts ,and external buttons
 
 ## wire-frame and screenshots
 wireframe: 
@@ -33,7 +33,7 @@ winner!-https://imgur.com/a/SkdXS73
 mobile format, spin animation, small design changes to give a more slots feel
 
 ## Pseudocode
-1. se flex box to style the webpage accordingly with a very minimalist approach and look
+1. use flex box to style the webpage accordingly with a very minimalist approach and look
 2. minimalist approach, style colors appropriately
 3. when user clicks button, have three slots show result, coming out with three randomly generated outcomes
 4. have loop that iterates through all winning combinations to determine if win/loss
@@ -46,12 +46,9 @@ mobile format, spin animation, small design changes to give a more slots feel
 11. render a dark/light mode
 
 
-## thanks too
+## credit
 seven icon attribute "Voysla" from flaticon
 cherry/diamond/clover icon attribute "Freepik" from flaticon
 bell icon attribute "CreativeCons" from flaticon
 button provided by cssDeck.com
-button sound provided by https://www.fesliyanstudios.co
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7d18b9ad-4d8d-4ec7-9f1e-ac7b4612fc69/deploy-status)](https://app.netlify.com/sites/kagans-slot-machine/deploys)
+button sound provided by https://www.fesliyanstudios.com

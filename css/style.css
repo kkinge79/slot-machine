@@ -24,8 +24,7 @@ body {
   --slotsDecor-background-color: #edc531;
   --slotsMachine-background-color: #ffd85d;
   --slotsMachine-filter: drop-shadow(30px 20px 4px #5b9791);
-  --body-bg: #212529;
-
+  --body-bg: #212529;;
   background-color: var(--body-bg);
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -250,3 +249,11 @@ p {
   content: var(--light-dark-btn-content);
 border-radius: 15%;
 }
+
+@media only screen
+ and (min-device-width: 375px)
+ and (max-device-width:  812px) {
+  #winner {
+    font-size: 1px;
+  }
+ }
