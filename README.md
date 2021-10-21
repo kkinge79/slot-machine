@@ -36,8 +36,8 @@ javascript, HTML5, CSS, Animate.css
 
 ## wire-frame and screenshots
 wireframe: 
-<img src="https://imgur.com/a/YE5etYC"/>
-other wireframe that i want t o work on in future: <img src="https://imgur.com/a/aIsWQwT"/>
+https://imgur.com/a/YE5etYC
+other wireframe that i want t o work on in future: https://imgur.com/a/aIsWQwT
 
 screen shots:  
 basic html/css- https://imgur.com/a/u0wcn2Z"
