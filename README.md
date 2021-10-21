@@ -48,7 +48,7 @@ Winner!-https://imgur.com/a/SkdXS73
 
 
 ## Next steps 
-Mobile format, spin animation, more winning combinations, diffrent slot themes, more exciting jackpot and winning animation/sounds
+Mobile format, spin animation, more winning combinations, diffrent slot themes
 
 
 
