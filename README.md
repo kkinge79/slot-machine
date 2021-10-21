@@ -11,11 +11,11 @@ https://minimalist-slots.netlify.app/
 ## how to play and point system
 -hit spin!, every time you get three matching icons in a row itll add to your credits! if you hit 0 credits then you lose!
   
-  - cherry: 50
-  - bell: 50
-  - clover: 100
-  - diamond: 250
-  - seven: 1000
+  - 3 cherries: 50
+  - 3 bells: 75
+  - 3 clovers: 150
+  - 3 diamons: 500
+  - 3 sevens: 5000 (jackpot!)
   - costs 10 per spin
 
 
