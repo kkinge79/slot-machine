@@ -37,7 +37,8 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 
 
 //function called getRandomNumber, that has a weighted probability per number
-//for in loop so iterates through every variable in the object
+//for in loop so iterates through every variable(properties) of the array(object) and those inherits from its chain)
+  //properties nearer take precedence over those further away in the array/object
 //have the sum equal to the number in weightedRand object 
 function getRandomNumber() {
   let sum = 0
@@ -76,10 +77,6 @@ function spin() {
   } else {
     hideMessage();
   }
-  //button click
-  setTimeout(function(){
-    audio.play();
-  },0);
 
     //credits
     //ties into the array of choices, and will add credits depending on the combination you get
@@ -103,6 +100,10 @@ function spin() {
 //to call more than once
   credOutput.innerHTML = credits;
 } else { alert("You have no more credits!")}
+ //button click
+ setTimeout(function(){
+  audio.play();
+},0);
 }
 
   //trigger if you want voice chat when you win
@@ -112,6 +113,13 @@ function jackpot() {
     speak("WINNER WINNER CHICKEN DINNER")
   }
 }
+
+//will speak when there is a winner
+const speak = (msg) => {
+  const sp = new SpeechSynthesisUtterance(msg);
+  speechSynthesis.speak(sp);
+}
+
 //function to show message when there is a winner
 function showMessage() {
   const winnerMsg = document.getElementById("displayResults");
@@ -127,15 +135,6 @@ function hideMessage() {
   const winnerMsg = document.getElementById("displayResults");
   winnerMsg.style.display = "none";
 }
-
-
-//will speak when there is a winner
-const speak = (msg) => {
-  const sp = new SpeechSynthesisUtterance(msg);
-  speechSynthesis.speak(sp);
-}
-
-
 
 // light and dark mode
 function toggleLightDark() {
