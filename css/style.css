@@ -249,11 +249,3 @@ p {
   content: var(--light-dark-btn-content);
 border-radius: 15%;
 }
-
-@media only screen
- and (min-device-width: 375px)
- and (max-device-width:  812px) {
-  #winner {
-    font-size: 1px;
-  }
- }
