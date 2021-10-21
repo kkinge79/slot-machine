@@ -23,7 +23,7 @@ https://minimalist-slots.netlify.app/
   - 3 cherries: 50
   - 3 bells: 50
   - 3 clovers: 125
-  - 3 diamons: 500
+  - 3 diamonds: 500
   - 3 sevens: 5000 (jackpot!)
   - Costs 10 per spin
 
@@ -40,10 +40,10 @@ https://imgur.com/a/YE5etYC
 Other wireframe that i want t o work on in future: https://imgur.com/a/aIsWQwT
 
 Screen shots:  
-Basic html/css- https://imgur.com/a/u0wcn2Z"
-Light-https://imgur.com/a/Nr9bgO8"
-Dark-https://imgur.com/a/fbbFyla"
-Winner!-https://imgur.com/a/SkdXS73
+Basic html/css- https://imgur.com/a/u0wcn2Z",
+Light-https://imgur.com/a/Nr9bgO8",
+Dark-https://imgur.com/a/fbbFyla",
+Winner!-https://imgur.com/a/SkdXS73,
 
 
 
