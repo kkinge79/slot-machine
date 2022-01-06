@@ -44,7 +44,7 @@ function getRandomNumber() {
   let sum = 0
   let num
   const weightedRand = {
-    0:0.3, 1:0.3, 2:0.2, 3:0.15, 4:0.05
+    0:0.01, 1:0.01, 2:0.01, 3:0.01, 4:0.96
     //cherry, bell, clover, diamond , seven
   }
   for (num in weightedRand) {
