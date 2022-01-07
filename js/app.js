@@ -69,7 +69,6 @@ function spin() {
   const num3 = getRandomNumber();
 
   const mysteryPrize = Math.floor(Math.random() * 5001) - 2500;
-  console.log(mysteryPrize)
   // assaigning each slot with a randomly generated number
   // used local img file and called those images into the consts, allowing me to change the numbers to pics instead
   slotOne.innerHTML = `<img class="imgOne" src="${arrayOfChoices[num1]}">`;

@@ -18,12 +18,13 @@ https://minimalist-slots.netlify.app/
 
 
 ## how to play and point system
--Hit spin!, every time you get three matching icons in a row itll add to your credits! if you hit 0 credits then you lose!
+-Hit spin!, every time you get three matching icons in a row itll add to your credits! Get three "?" and activate the MYSTERYBOX where you can win up to 5000 credits or lose up to 5000 credits. if you hit 0 credits then you lose!
   
   - 3 cherries: 50
   - 3 bells: 50
   - 3 clovers: 125
   - 3 diamonds: 500
+  - 3 ?: between -5000 & 5000
   - 3 sevens: 5000 (jackpot!)
   - Costs 10 per spin
 
@@ -48,7 +49,7 @@ Winner!-https://imgur.com/a/SkdXS73,
 
 
 ## Next steps 
-[✅]Mobile format,[✅] subtle spin animation, more winning combinations, different slot themes, bonus game
+[✅]Mobile format,[✅] subtle spin animation, [✅] more winning combinations, different slot themes, bonus game
 
 
 
