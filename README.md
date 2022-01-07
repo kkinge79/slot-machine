@@ -48,7 +48,7 @@ Winner!-https://imgur.com/a/SkdXS73,
 
 
 ## Next steps 
-Mobile format, spin animation, more winning combinations, different slot themes, bonus game
+[✅]Mobile format,[✅] subtle spin animation, more winning combinations, different slot themes, bonus game
 
 
 
@@ -73,3 +73,4 @@ Mobile format, spin animation, more winning combinations, different slot themes,
 -Button provided by cssDeck.com
 -Button & winner sound provided by https://www.fesliyanstudios.com
 -Favicon -Erin glass/ digitialocean.com
+-mystery box icon attribute Freepik from "flaticon"

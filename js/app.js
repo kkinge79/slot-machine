@@ -5,12 +5,13 @@ const diamond = '../images/diamond.png';
 const bell = '../images/bell.png';
 const seven = '../images/seven.png';
 const clover = '../images/clover.png'
+const mysterybox = '../images/question-mark.png'
 const audio = new Audio('../audio/butn.mp3')
 const winner = new Audio('../audio/winner.wav')
 
 // /*-------------------------------- Variables --------------------------------*/
 
-const arrayOfChoices = [cherry,bell,clover,diamond,seven]
+const arrayOfChoices = [cherry,bell,clover,diamond,mysterybox,seven]
 let credits = 5000
 
 // /*------------------------ Cached Element References ------------------------*/
@@ -44,8 +45,8 @@ function getRandomNumber() {
   let sum = 0
   let num
   const weightedRand = {
-    0:0.3, 1:0.3, 2:0.02, 3:0.15, 4:0.05
-    //cherry, bell, clover, diamond , seven
+    0:0.25, 1:0.25, 2:0.2, 3:0.15, 4:0.1, 5:0.05
+    //cherry,bell,mysterybox,clover,diamond,seven
   }
   for (num in weightedRand) {
     sum += weightedRand[num]
@@ -53,6 +54,7 @@ function getRandomNumber() {
   }
   return num
 }
+
 
 // when spin button pushed executes the code
 function spin() {
@@ -66,6 +68,8 @@ function spin() {
   const num2 = getRandomNumber();
   const num3 = getRandomNumber();
 
+  const mysteryPrize = Math.floor(Math.random() * 5001) - 2500;
+  console.log(mysteryPrize)
   // assaigning each slot with a randomly generated number
   // used local img file and called those images into the consts, allowing me to change the numbers to pics instead
   slotOne.innerHTML = `<img class="imgOne" src="${arrayOfChoices[num1]}">`;
@@ -84,14 +88,16 @@ function spin() {
     //will keep allowing the user to hit play but wont add/subtract credits
     if (credits > 0) {
   if(num1 === '0' && num2 === '0' && num3 === '0') {
-    credits = credits + 50;
+    credits = credits + 100;
   } else if(num1 === '1' && num2 === '1' && num3 === '1') {
-    credits = credits + 50;
+    credits = credits + 100;
   } else if (num1 === '2' && num2 === '2' && num3 === '2') {
-    credits = credits + 125;
+    credits = credits + 250;
   } else if (num1 === '3' && num2 === '3' && num3 === '3') {
     credits = credits + 500;
   } else if (num1 === '4' && num2 === '4' && num3 === '4') {
+    credits = credits + mysteryPrize;
+  } else if (num1 === '5' && num2 === '5' && num3 === '5') {
     credits = credits + 5000;
     jackpot()
   } else {
